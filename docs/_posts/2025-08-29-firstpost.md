@@ -1,8 +1,6 @@
----
 layout: post
 title: "firstpost"
 categories: test
----
 # Java Learning
 ## Language
 ### for
