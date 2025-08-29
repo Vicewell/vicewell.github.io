@@ -6,6 +6,9 @@
 
 ![Thumbnail of Leap day](thumbnail.png)
 
+## Java Language
+<a href = "https://vicewell.github.io/2025/08/29/firstpost.html" title="Java Study">Java Study</a>
+
 ## Usage
 
 To use the Leap day theme:
