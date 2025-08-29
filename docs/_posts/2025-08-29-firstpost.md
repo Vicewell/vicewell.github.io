@@ -51,12 +51,16 @@ IBM有一篇有关Java存储器回收机制比不激活垃圾收集机制的C++�
 - 方法名：所有的方法名都应该以小写字母开头。如果方法名含有若干单词，则后面的每个单词首字母大写，例如myFirstJavaMethod。
 - 源文件名：源文件名必须和文件内名字唯一且公开(由public 关键词修饰)的类名相同。当保存文件的时候，你应该使用该类名作为文件名保存（切记Java是大小写敏感的），文件名的后缀为.java。（如果文件名和类名不相同则会导致编译错误）。
 - 主方法入口：所有的Java程序由public static void main(String[] args)方法开始执行。
+
 ### 接口和类
 Java自带了创建接口的类别，可以这样使用：
+
   public interface Deleteable {
       void delete();
   }
+
 这段代码的意思是任何实现（implement）Deleteable接口的类别都必须实现delete()方法。每个类别对这个方法的实现可以自行定制。由此概念可以引出很多种使用方法，下面是一个类别的例子：
+
   public class Fred implements Deleteable {
       // 必須實作Deleteable介面中的delete方法
       @Override 
@@ -69,11 +73,13 @@ Java自带了创建接口的类别，可以这样使用：
   }
 
 在另外一个类别中，可以使用这样的代码：
+
   public void deleteAll（Deleteable [] list）{
       for（int i = 0; i < list.length; i++）{
           list[i].delete();
       }
   }
+
 因为队列中所有的对象都可以使用delete()方法。Deleteable队列中包含Fred对象的引用，而这个类别和其他Deleteable类别在使用deleteAll()方法时候不需要进行任何改变。
 
 之所以这样做就是为了在接口的执行和其代码之间进行区别。举例来说，一个名叫Collection的接口可以包含任何对象所需要的引入、转换和存储数据的方法，其他的类都可以使用这个接口。但是这个接口可以是一个可重定义大小的队列、一个链表或者是其他功能的集合。
