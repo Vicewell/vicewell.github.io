@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "firstpost"
-date: 2025-08-29 16:24:55
 categories: test
 ---
 # Java Learning
