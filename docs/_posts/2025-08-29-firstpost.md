@@ -64,13 +64,12 @@ Java自带了创建接口的类别，可以这样使用：
       @Override 
       public void delete() { 
           // 實作的程式碼
-      }
-          
+      }   
       // 這個類別也可以包含其他方法 
       public void doOtherStuff() {
-  
       }
   }
+
 在另外一个类别中，可以使用这样的代码：
   public void deleteAll（Deleteable [] list）{
       for（int i = 0; i < list.length; i++）{
